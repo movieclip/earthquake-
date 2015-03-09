@@ -44,6 +44,7 @@
     Services *service = [[Services alloc] init];
     service.delegate = self;
     [service LoadFeed];
+    service = nil;
 }
 
 -(void)onFeedLoaded:(NSDictionary *)result{
